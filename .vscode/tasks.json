@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\Program Files\\rtools43\\x86_64-w64-mingw32.static.posix\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-I${workspaceFolder}/inst/include",
+				"-I${workspaceFolder}/libs/armadillo-12.4.0/include",
+				// "-I${workspaceFolder}/libs/Rcpp-master/inst/include",
+				// "-IC:/Program Files/rtools43/x86_64-w64-mingw32.static.posix/include",
+				// "-IC:/Program Files/R/R-4.3.0/include",
+				"-L${workspaceFolder}/libs/lib",
+				"-larmadillo"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: \"C:\\Program Files\\rtools43\\x86_64-w64-mingw32.static.posix\\bin\\g++.exe\""
+		}
+	]
+}

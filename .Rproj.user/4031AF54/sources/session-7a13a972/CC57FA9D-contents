@@ -1,0 +1,198 @@
+# ToDo --------------------------------------------------------------------
+
+# X 1. Test whether coefficient_var is a viable way to get prettier estimation
+#  results for the estimation.
+# X 2. Obtain quantiles for true values as matrix to show convergence with
+#  increasingly smaller coefficient_var
+# 3. Recreate build process to modify the C++ routine - Almost working, just
+#   the installation part is missing
+# 4. Implement Thomas' idea: Switch N and P
+# 5. Implement Kai's thoughts: Minimize read-write actions to memory,
+#   since RAM is the constraining factor
+# 6. Multi-Threading with Parallelsth
+# 7. Trial run on the SAFE cluster single-threaded and multi-threaded
+
+# Update Stephan Sunday evening with estimation consistency, quantiles & precision
+# Mon-Wed? Build process
+# Thur: Thomas' idea
+# Friday: Kai's idea
+# Weekend: Multithreading
+
+# CURRENT STATUS: Testing with R=1mio whether P=2 will be estimated properly.
+# If still doesn't work, then use R=10Mio, if that doesn't work, then sth
+# is broken.
+
+# Setup -------------------------------------------------------------------
+
+if (!require("pacman"))
+  install.packages("pacman")
+pacman::p_load("bayesm", "Rcpp", "randcorr", "matrixcalc", "MASS")
+
+rm(list = ls(all = TRUE))
+# sourceCpp("rmnpGibbs_rcpp_loop.cpp")
+set.seed(234324)
+
+# number of consumers (roughly matches real data) & products
+n = consumer_num = 12000
+p = product_num = 2
+R = 1000000
+burnin = trunc(0.1 * R)
+nprint = R / 1000
+nprint = 1000
+# nchains = 2
+size_Z = 4
+inclChar = 0
+coeff_noise = 1
+
+cat(
+  "\n\n\n",
+  "Estimated time:",
+  n * p ^ 2 * R / 20000000,
+  "seconds or",
+  n * p ^ 2 * R / 20000000 / 60,
+  "minutes\n\n\n"
+)
+
+# Characteristics-based data generation -----------------------------------
+
+# Characteristics are uniform random, coefficient vector is normal random
+
+# characteristics that drive consideration: 4 binary characteristics, 2
+# switched on for every of the 10 products
+random_Z = matrix(runif(product_num * size_Z), nrow = product_num, ncol =
+                    size_Z)       # set of binary char (generates J by size_Z values)
+char_Z = random_Z > median(random_Z, 2)
+# char_Z = matrix(rnorm(product_num * size_Z), nrow = product_num, ncol =
+#                   size_Z)
+
+## HERE'S HE SCALING FOR DIAG = 1!!
+# char-pref draws (scaling leads to variances=1 b/c every product has two
+# characteristics ==1)
+k = consumer_num * size_Z
+gamma_Z = matrix(rnorm(consumer_num * size_Z, 0, coeff_noise),
+                 nrow = consumer_num,
+                 ncol = size_Z) * (0.5) ^ 0.5 # (1/(1+size_Z))^0.5
+gamma_intercept = -0.8
+
+# testcovmat = matrix(rnorm(product_num^2, 0, matrix(runif(product_num^2), nrow = product_num)), nrow=product_num)
+# testcovmat
+# testcovvec = matrix(testcovmat, nrow=product_num^2)
+# testcorrvec = apply(testcovvec, 1, nmat)
+# testcorrmat = matrix(testcorrvec, ncol=product_num)
+# testcorrmat
+# testcorr = randcorr(product_num)
+# testcorr
+# is.positive.definite(testcorr)
+# 
+# eps = matrix(mvrnorm(1, rep(0, product_num), testcorr), nrow = 1)
+# for (i in 2:n) {
+#   eps = rbind(eps, matrix(mvrnorm(1, rep(0, product_num), testcorr), nrow =
+#                             1))
+# }
+
+# price_coeff =  matrix(rnorm(consumer_num * 1, 0, coeff_noise),
+#                       nrow = consumer_num,
+#                       ncol = 1)
+# price = matrix(rlnorm(product_num, 5, 2), ncol = 1)
+intercepts = matrix(rep(gamma_intercept, consumer_num * product_num), ncol = product_num)
+# v-function with product-specific variances
+v_func =  intercepts + gamma_Z %*% t(char_Z) # + price_coeff %*% t(price) 
+
+# check that diagonals are equal to one!
+truecov = cov(v_func)
+truecovvec = matrix(truecov, ncol = p ^ 2)
+truecorrvec = t(apply(truecovvec, 1, nmat))
+truecorr = matrix(truecorrvec, ncol = p)
+
+# Overwrite with Sigma of eps
+truecorrvec = matrix(truecorrvec, ncol = p ^ 2)
+
+# CONSIDERATION SET: determine which products are actually searched
+cset = as.numeric(t(v_func) > 0)
+
+# some basic descriptive stats
+cset_size = sum(cset, 2)
+# mean(cset_size) # Supposed to be 2, 2.1047 is close enough
+
+
+# Bayes estimation --------------------------------------------------------
+
+# Data setup
+X = matrix(rep(1, n), ncol = 1) %x% cbind(diag(p), char_Z[, 0:inclChar])
+
+y = matrix(cset, ncol = 1)
+Data = list(X = X,
+            y = matrix(cset, ncol = 1),
+            p = p)
+nu = (p - 1) + 3
+Prior = list(
+  betabar = matrix(rep(0, p + inclChar)),
+  A = 0.01 * diag(p + inclChar),
+  nu = nu,
+  V = nu * diag(p)
+)
+Mcmc = list(
+  R = R,
+  keep = 1,
+  nprint = nprint,
+  beta0 = matrix(rep(0, p + inclChar)),
+  sigma0 = nu * diag(p)
+)
+
+# Estimation
+start = Sys.time()
+out = rmvpGibbs(Data, Prior, Mcmc)
+time = Sys.time() - start
+
+cat("\n\n\n", "MCMC time: ", time, "seconds", "\n\n\n")
+
+
+# Evaluation ----------------------------------------------
+
+d = sqrt(ncol(out$sigmadraw))
+corrd = t(apply(out$sigmadraw[(burnin + 1):nrow(out$sigmadraw), ], 1, nmat))
+pmeancorr = apply(corrd, 2, mean)
+dim(pmeancorr) = c(d, d)
+indexdiag = (0:(d - 1)) * d + 1:d
+var = out$sigmadraw[(burnin + 1):nrow(out$sigmadraw), indexdiag]
+sdd = sqrt(var)
+pmeansd = apply(sdd, 2, mean)
+# mat = cbind(pmeancorr)
+names = as.character(1:d)
+rownames(pmeancorr) = names
+colnames(pmeancorr) = names
+# cat("Posterior Means of Correlation Matrix \n")
+# print(pmeancorr, digits = 2)
+
+
+# cat("\nUpper Triangle of Var-Cov Matrix \n")
+ind = as.vector(upper.tri(matrix(0, ncol = d, nrow = d), diag = TRUE))
+labels = cbind(rep(c(1:d), d), rep(c(1:d), each = d))
+labels = labels[ind,]
+plabels = paste(labels[, 1], labels[, 2], sep = ",")
+uppertri = as.matrix(corrd[, ind])
+attributes(uppertri)$class = "bayesm.mat"
+# summary(uppertri,
+#         names = plabels,
+#         burnin = burnin,
+#         tvalues = truecorrvec[ind])
+
+quant = matrix(0, nrow = dim(uppertri)[2], ncol = 2)
+colnames(quant) = c("True value", "Estimate Quantile")
+for (i in 1:(dim(uppertri)[2])) {
+  empdistfun = ecdf(uppertri[, i])
+  res = empdistfun(truecorrvec[, ind][i])
+  quant[i, 1] = truecorrvec[, ind][i]
+  quant[i, 2] = res
+}
+print(quant)
+avgquantdev = quant[, 2]
+indexdiag = abs(quant[, 1] - 1) < 0.00001
+mdev = mean(abs(quant[, 2][-((1:length(indexdiag))[indexdiag])] - 0.5))
+cat("Mean absolute deviation of off-diagonal covariances from true value: ",
+    mdev)
+stop()
+
+
+# summary.bayesm.mat(out$betadraw, tvalues = c(rep(gamma_intercept, p)))
+# summary.bayesm.var(out$sigmadraw)

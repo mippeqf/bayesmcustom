@@ -1,0 +1,1271 @@
+[
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:bayesmcustom.h@35@macro@__bayesmcustom_H__",
+                "kind": 9,
+                "parent_name": "",
+                "name": "__bayesmcustom_H__",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 2,
+                "column": 9,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@moments",
+                "kind": 3,
+                "parent_name": "",
+                "name": "moments",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 14,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@unireg",
+                "kind": 3,
+                "parent_name": "",
+                "name": "unireg",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 23,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@mnlMetropOnceOut",
+                "kind": 3,
+                "parent_name": "",
+                "name": "mnlMetropOnceOut",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 29,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@lambda",
+                "kind": 3,
+                "parent_name": "",
+                "name": "lambda",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 36,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@priorAlpha",
+                "kind": 3,
+                "parent_name": "",
+                "name": "priorAlpha",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 44,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@murooti",
+                "kind": 3,
+                "parent_name": "",
+                "name": "murooti",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 52,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@thetaStarIndex",
+                "kind": 3,
+                "parent_name": "",
+                "name": "thetaStarIndex",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 58,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@S@DPOut",
+                "kind": 3,
+                "parent_name": "",
+                "name": "DPOut",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/inst/include/bayesmcustom.h",
+                "line": 64,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/bayesBLP_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@r2Sigma#&1$@N@arma@S@Col>#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "r2Sigma(const arma::vec &, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/bayesBLP_rcpp_loop.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@logJacob#&1$@N@arma@S@Mat>#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "logJacob(const arma::mat &, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/bayesBLP_rcpp_loop.cpp",
+                "line": 31,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@share2mu#&1$@N@arma@S@Mat>#d#S0_#S0_#&1$@N@arma@S@Col>#d#I#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "share2mu(const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, int, double)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/bayesBLP_rcpp_loop.cpp",
+                "line": 76,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rivDraw#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#S2_#S0_#S2_#S0_#S2_#S2_#d#S0_#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rivDraw(const arma::vec &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, double, const arma::vec &, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/bayesBLP_rcpp_loop.cpp",
+                "line": 139,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@bayesBLP_rcpp_loop#b#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#d#I#I#S0_#I#S2_#S0_#S2_#S2_#S0_#d#d#S0_#d#S0_#S2_#S2_#d#S0_#S2_#d#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "bayesBLP_rcpp_loop(bool, const arma::mat &, const arma::mat &, const arma::vec &, int, int, const arma::mat &, int, const arma::vec &, const arma::mat &, const arma::vec &, const arma::vec &, const arma::mat &, double, double, const arma::mat &, double, const arma::mat &, const arma::vec &, const arma::vec &, double, const arma::mat &, const arma::vec &, double, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/bayesBLP_rcpp_loop.cpp",
+                "line": 253,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/cgetC_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@cgetC#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "cgetC(double, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/cgetC_rcpp.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/clusterMix_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@ztoSim#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "ztoSim(const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/clusterMix_rcpp_loop.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@Simtoz#&1$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "Simtoz(const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/clusterMix_rcpp_loop.cpp",
+                "line": 25,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@clusterMix_rcpp_loop#&1$@N@arma@S@Mat>#d#d#b#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "clusterMix_rcpp_loop(const arma::mat &, double, bool, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/clusterMix_rcpp_loop.cpp",
+                "line": 54,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/ghkvec_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@HaltonSeq#I#I#I#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "HaltonSeq(int, int, int, bool)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/ghkvec_rcpp.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@IsPrime#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "IsPrime(int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/ghkvec_rcpp.cpp",
+                "line": 63,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@ghk_oneside#&1$@N@arma@S@Col>#d#S0_#S0_#I#b#S0_#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "ghk_oneside(const arma::vec &, const arma::vec &, const arma::vec &, int, bool, const arma::vec &, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/ghkvec_rcpp.cpp",
+                "line": 78,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@ghkvec#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#S2_#I#b#S3_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "ghkvec(const arma::mat &, const arma::vec &, const arma::vec &, int, bool, arma::vec)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/ghkvec_rcpp.cpp",
+                "line": 138,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/lndIChisq_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@lndIChisq#d#d#&1$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lndIChisq(double, double, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/lndIChisq_rcpp.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/lndMvst_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@lndMvst#&1$@N@arma@S@Col>#d#d#S0_#&1$@N@arma@S@Mat>#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lndMvst(const arma::vec &, double, const arma::vec &, const arma::mat &, bool)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/lndMvst_rcpp.cpp",
+                "line": 4,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rDPGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rDPGibbs_rcpp_loop#I#I#I#$@N@arma@S@Mat>#d#&1I#b#I#S1_#I#d#I#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rDPGibbs_rcpp_loop(int, int, int, arma::mat, const Rcpp::List &, bool, int, const Rcpp::List &, int, double, int, double)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rDPGibbs_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rbprobitGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rbprobitGibbs_rcpp_loop#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#S2_#S1_#S0_#S0_#S0_#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rbprobitGibbs_rcpp_loop(const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, arma::vec, const arma::vec &, const arma::vec &, const arma::vec &, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rbprobitGibbs_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rdirichlet_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rdirichlet#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rdirichlet(const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rdirichlet_rcpp.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierLinearMixture_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rhierLinearMixture_rcpp_loop#&1I#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#S1_#S1_#S1_#d#S1_#d#S3_#I#I#I#b#S2_#S3_#S4_#S4_#S4_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rhierLinearMixture_rcpp_loop(const Rcpp::List &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::mat &, double, const arma::mat &, double, const arma::vec &, int, int, int, bool, arma::mat, const arma::vec &, arma::vec, arma::vec, arma::vec)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierLinearMixture_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierLinearModel_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rhierLinearModel_rcpp_loop#&1I#&1$@N@arma@S@Mat>#d#S1_#S1_#d#S1_#d#&1$@N@arma@S@Col>#d#S4_#S2_#S2_#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rhierLinearModel_rcpp_loop(const Rcpp::List &, const arma::mat &, const arma::mat &, const arma::mat &, double, const arma::mat &, double, const arma::vec &, arma::vec, arma::mat, arma::mat, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierLinearModel_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlDP_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@drawDelta#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#I#&1I#&1$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "drawDelta(const arma::mat &, const arma::mat &, const arma::ivec &, const int &, const arma::vec &, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlDP_rcpp_loop.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rDPGibbs1#$@N@arma@S@Mat>#d#$@S@lambda#I#I#$@N@arma@S@Col>#I#$@N@arma@S@Col>#d#d#&1$@S@priorAlpha#I#&1I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rDPGibbs1(arma::mat, lambda, int, int, arma::ivec, arma::vec, double, const priorAlpha &, int, const Rcpp::List &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlDP_rcpp_loop.cpp",
+                "line": 54,
+                "column": 7,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rhierMnlDP_rcpp_loop#I#I#I#&1I#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#S1_#S0_#S0_#b#I#S2_#d#I#I#d#I#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rhierMnlDP_rcpp_loop(int, int, int, const Rcpp::List &, const arma::mat &, const arma::vec &, const arma::mat &, const Rcpp::List &, const Rcpp::List &, bool, int, arma::mat, double, int, int, double, int, double)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlDP_rcpp_loop.cpp",
+                "line": 168,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlRwMixture_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@llmnl_con#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "llmnl_con(const arma::vec &, const arma::vec &, const arma::mat &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlRwMixture_rcpp_loop.cpp",
+                "line": 5,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@mnlMetropOnce_con#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#d#d#S2_#S0_#S2_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mnlMetropOnce_con(const arma::vec &, const arma::mat &, const arma::vec &, double, double, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlRwMixture_rcpp_loop.cpp",
+                "line": 62,
+                "column": 18,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rhierMnlRwMixture_rcpp_loop#&1I#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#S1_#S1_#S1_#d#S1_#d#I#I#I#b#S2_#S3_#S4_#S2_#S4_#S3_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rhierMnlRwMixture_rcpp_loop(const Rcpp::List &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::mat &, double, const arma::mat &, double, int, int, int, bool, arma::mat, const arma::vec &, arma::vec, arma::mat, arma::vec, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierMnlRwMixture_rcpp_loop.cpp",
+                "line": 112,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rhierNegbinRw_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivDP_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@S@ytxtxtd",
+                "kind": 3,
+                "parent_name": "",
+                "name": "ytxtxtd",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivDP_rcpp_loop.cpp",
+                "line": 4,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@get_ytxt#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S2_#S2_#S2_#I#&1$@N@arma@S@Col>#I#&1I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "get_ytxt(const arma::vec &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::mat &, int, const arma::ivec &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivDP_rcpp_loop.cpp",
+                "line": 10,
+                "column": 9,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@get_ytxtd#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#d#S0_#S2_#S2_#I#&1$@N@arma@S@Col>#I#&1I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "get_ytxtd(const arma::vec &, const arma::mat &, double, const arma::vec &, const arma::mat &, const arma::mat &, int, const arma::ivec &, const int &, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivDP_rcpp_loop.cpp",
+                "line": 76,
+                "column": 9,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rthetaDP#I#d#$@S@lambda#&1$@S@priorAlpha#I#$@N@arma@S@Col>#I#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rthetaDP(int, double, lambda, const priorAlpha &, int, arma::ivec, const arma::vec &, const arma::mat &, int, Rcpp::List)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivDP_rcpp_loop.cpp",
+                "line": 172,
+                "column": 7,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rivDP_rcpp_loop#I#I#I#I#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#S2_#S0_#b#S2_#S0_#S2_#S1_#&1I#I#b#I#d#d#S4_#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rivDP_rcpp_loop(int, int, int, int, const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, bool, const arma::mat &, const arma::vec &, const arma::mat &, arma::vec, const Rcpp::List &, int, bool, int, double, double, const Rcpp::List &, double, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivDP_rcpp_loop.cpp",
+                "line": 286,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivgibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rivGibbs_rcpp_loop#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#S2_#S0_#S2_#S0_#S2_#S2_#d#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rivGibbs_rcpp_loop(const arma::vec &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, double, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rivgibbs_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixGibbs_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@drawCompsFromLabels#&1$@N@arma@S@Mat>#d#S0_#S0_#d#S0_#I#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "drawCompsFromLabels(const arma::mat &, const arma::mat &, const arma::mat &, double, const arma::mat &, int, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixGibbs_rcpp.cpp",
+                "line": 6,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@drawLabelsFromComps#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "drawLabelsFromComps(const arma::mat &, const arma::vec &, Rcpp::List)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixGibbs_rcpp.cpp",
+                "line": 73,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@drawPFromLabels#&1$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "drawPFromLabels(const arma::vec &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixGibbs_rcpp.cpp",
+                "line": 119,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rmixGibbs#&1$@N@arma@S@Mat>#d#S0_#S0_#d#S0_#&1$@N@arma@S@Col>#d#S2_#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmixGibbs(const arma::mat &, const arma::mat &, const arma::mat &, double, const arma::mat &, const arma::vec &, const arma::vec &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixGibbs_rcpp.cpp",
+                "line": 135,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixture_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rcomp#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rcomp(Rcpp::List)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixture_rcpp.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rmixture#I#$@N@arma@S@Col>#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmixture(int, arma::vec, Rcpp::List)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmixture_rcpp.cpp",
+                "line": 23,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmnlIndepMetrop_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rmnlIndepMetrop_rcpp_loop#I#I#d#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#S2_#S0_#S2_#S2_#d#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmnlIndepMetrop_rcpp_loop(int, int, double, const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, double, double, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmnlIndepMetrop_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmnpGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@drawwi#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "drawwi(const arma::vec &, const arma::vec &, const arma::mat &, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmnpGibbs_rcpp_loop.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@draww#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "draww(const arma::vec &, const arma::vec &, const arma::mat &, const arma::ivec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmnpGibbs_rcpp_loop.cpp",
+                "line": 35,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rmnpGibbs_rcpp_loop#I#I#I#I#&1$@N@arma@S@Col>#I#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#S2_#S2_#d#S4_#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmnpGibbs_rcpp_loop(int, int, int, int, const arma::ivec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, double, const arma::vec &, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmnpGibbs_rcpp_loop.cpp",
+                "line": 56,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmvst_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rmvst#d#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmvst(double, const arma::vec &, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rmvst_rcpp.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rnegbinRw_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rnegbinRw_rcpp_loop#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#S2_#d#d#S1_#d#b#S2_#d#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rnegbinRw_rcpp_loop(const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, double, double, arma::vec, double, bool, const arma::mat &, double, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rnegbinRw_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rnmixGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rnmixGibbs_rcpp_loop#&1$@N@arma@S@Mat>#d#S0_#S0_#d#S0_#&1$@N@arma@S@Col>#d#S3_#S3_#&1I#S4_#S4_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rnmixGibbs_rcpp_loop(const arma::mat &, const arma::mat &, const arma::mat &, double, const arma::mat &, const arma::vec &, arma::vec, arma::vec, const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rnmixGibbs_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rordprobitGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@dstartoc#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dstartoc(const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rordprobitGibbs_rcpp_loop.cpp",
+                "line": 6,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@lldstar#&1$@N@arma@S@Col>#d#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lldstar(const arma::vec &, const arma::vec &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rordprobitGibbs_rcpp_loop.cpp",
+                "line": 18,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@dstarRwMetrop#&1$@N@arma@S@Col>#d#S0_#S0_#d#&1$@N@arma@S@Mat>#d#S0_#d#S2_#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dstarRwMetrop(const arma::vec &, const arma::vec &, const arma::vec &, double, const arma::mat &, const arma::vec &, double, const arma::mat &, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rordprobitGibbs_rcpp_loop.cpp",
+                "line": 40,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rordprobitGibbs_rcpp_loop#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#I#S2_#S0_#S2_#d#S2_#S0_#S0_#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rordprobitGibbs_rcpp_loop(const arma::vec &, const arma::mat &, int, const arma::mat &, const arma::vec &, const arma::mat &, double, const arma::mat &, const arma::vec &, const arma::vec &, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rordprobitGibbs_rcpp_loop.cpp",
+                "line": 91,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@ghk#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#S2_#&1I#S4_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "ghk(const arma::mat &, const arma::vec &, const arma::vec &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+                "line": 5,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@dy#$@N@arma@S@Mat>#d#&1S0_#&1$@N@arma@S@Col>#d#S2_#S1_#S2_#S2_#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dy(arma::mat, const arma::mat &, const arma::vec &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::vec &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+                "line": 60,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rlpx#&1$@N@arma@S@Mat>#d#d#I#&1$@N@arma@S@Col>#d#S2_#S0_#S2_#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rlpx(const arma::mat &, double, int, const arma::vec &, const arma::vec &, const arma::mat &, const arma::vec &, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+                "line": 120,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@condd#&1$@N@arma@S@Mat>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "condd(const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+                "line": 155,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@getS#&1$@N@arma@S@Mat>#d#I#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "getS(const arma::mat &, int, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+                "line": 187,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@llL#&1$@N@arma@S@Mat>#d#I#S0_#S0_#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "llL(const arma::mat &, int, const arma::mat &, const arma::mat &, double)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+                "line": 201,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rscaleUsage_rcpp_loop#I#&1$@N@arma@S@Mat>#d#I#I#I#I#I#I#S1_#$@N@arma@S@Col>#d#S1_#S2_#S2_#S1_#d#b#b#b#b#b#b#d#S0_#S0_#S0_#&1S2_#S3_#S3_#S3_#I#S0_#S3_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rscaleUsage_rcpp_loop(int, const arma::mat &, int, int, int, int, int, int, arma::mat, arma::vec, arma::mat, arma::vec, arma::vec, arma::mat, double, bool, bool, bool, bool, bool, bool, double, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, int, const arma::mat &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rscaleUsage_rcpp_loop.cpp",
+                "line": 215,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rsurGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rsurGibbs_rcpp_loop#&1I#&1$@N@arma@S@Col>#d#S1_#S1_#&1$@N@arma@S@Mat>#d#S4_#S3_#S1_#d#S3_#I#S4_#S3_#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rsurGibbs_rcpp_loop(const Rcpp::List &, const arma::vec &, const arma::vec &, const arma::vec &, const arma::mat &, arma::mat, const arma::mat &, const arma::vec &, double, const arma::mat &, int, arma::mat, const arma::mat &, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rsurGibbs_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rtrun_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rtrun#&1I#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rtrun(const Rcpp::NumericVector &, const Rcpp::NumericVector &, const Rcpp::NumericVector &, const Rcpp::NumericVector &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/rtrun_rcpp.cpp",
+                "line": 4,
+                "column": 15,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/runiregGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@runiregGibbs_rcpp_loop#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#S2_#d#d#d#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "runiregGibbs_rcpp_loop(const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, double, double, double, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/runiregGibbs_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/runireg_rcpp_loop.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@runireg_rcpp_loop#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#S2_#d#d#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "runireg_rcpp_loop(const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, double, double, int, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/archive/runireg_rcpp_loop.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/breg_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@breg#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S0_#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "breg(const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/breg_rcpp.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/functionTiming.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@startMcmcTimer#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "startMcmcTimer",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/functionTiming.cpp",
+                "line": 8,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@infoMcmcTimer#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "infoMcmcTimer(int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/functionTiming.cpp",
+                "line": 13,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@endMcmcTimer#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "endMcmcTimer",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/functionTiming.cpp",
+                "line": 23,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/llmnl_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@llmnl#&1I#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "llmnl(const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/llmnl_rcpp.cpp",
+                "line": 4,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/lndIWishart_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@lndIWishart#d#&1I#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lndIWishart(double, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/lndIWishart_rcpp.cpp",
+                "line": 4,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/lndMvn_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@lndMvn#&1I#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lndMvn(const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/lndMvn_rcpp.cpp",
+                "line": 4,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/rmultireg_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rmultireg#&1$@N@arma@S@Mat>#d#S0_#S0_#S0_#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmultireg(const arma::mat &, const arma::mat &, const arma::mat &, const arma::mat &, double, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/rmultireg_rcpp.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/rmvpGibbs_rcpp_loop.cpp",
+        "file_last_write": 1685431634.0,
+        "definitions": [
+            {
+                "usr": "c:@F@drawwi_mvp#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#I#1$@N@arma@S@Col>#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "drawwi_mvp(const arma::vec &, const arma::vec &, const arma::mat &, int, const arma::ivec)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/rmvpGibbs_rcpp_loop.cpp",
+                "line": 8,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@draww_mvp#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#I#I#&I#S6_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "draww_mvp(const arma::vec &, const arma::vec &, const arma::mat &, const arma::ivec &, int, int &, int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/rmvpGibbs_rcpp_loop.cpp",
+                "line": 37,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@init_threads#&1$@N@arma@S@Col>#d#S0_#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "init_threads(const arma::vec &, const arma::vec &, const arma::mat &, const arma::ivec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/rmvpGibbs_rcpp_loop.cpp",
+                "line": 58,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rmvpGibbs_rcpp_loop#I#I#I#I#&1$@N@arma@S@Col>#I#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#S2_#S2_#d#S4_#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmvpGibbs_rcpp_loop(int, int, int, int, const arma::ivec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, double, const arma::vec &, const arma::mat &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/rmvpGibbs_rcpp_loop.cpp",
+                "line": 87,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/rwishart_rcpp.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rwishart#d#&1I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rwishart(double, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/rwishart_rcpp.cpp",
+                "line": 4,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/trunNorm.cpp",
+        "file_last_write": 1685219427.0,
+        "definitions": [
+            {
+                "usr": "c:@F@dexpr#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dexpr(const double &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/trunNorm.cpp",
+                "line": 10,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@invCdfNorm#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "invCdfNorm(const double &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/trunNorm.cpp",
+                "line": 32,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@dnr#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dnr(const double &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/trunNorm.cpp",
+                "line": 44,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@trunNormBelow#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "trunNormBelow(const double &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/trunNorm.cpp",
+                "line": 63,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@trunNorm#d#d#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "trunNorm(double, double, double, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/trunNorm.cpp",
+                "line": 91,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@trunNorm_vec#&1$@N@arma@S@Col>#d#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "trunNorm_vec(const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/trunNorm.cpp",
+                "line": 123,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+        "file_last_write": 1685135252.0,
+        "definitions": [
+            {
+                "usr": "c:@F@condmom#&1I#S0_#S0_#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "condmom(const int &, const int &, const int &, int, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 4,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rtrun1#d#d#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rtrun1(double, double, double, int)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 27,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@drawDelta#&1I#S0_#S0_#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "drawDelta(const int &, const int &, const int &, const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 53,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@runiregG#&1I#S0_#S0_#S0_#d#S0_#S0_#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "runiregG(const int &, const int &, const int &, const int &, double, const int &, const int &, double, double)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 105,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@llnegbin#&1I#S0_#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "llnegbin(const int &, const int &, double, bool)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 145,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@lpostbeta#d#&1I#S0_#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lpostbeta(double, const int &, const int &, const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 178,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@lpostalpha#d#&1I#S0_#S0_#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lpostalpha(double, const int &, const int &, const int &, double, double)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 204,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@breg1#&1I#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "breg1(const int &, const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 229,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rtrunVec#&1I#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rtrunVec(const int &, const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 250,
+                "column": 5,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@mnlMetropOnce#&1I#S0_#S0_#d#d#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mnlMetropOnce(const int &, const int &, const int &, double, double, const int &, const int &, const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 272,
+                "column": 18,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rmultinomF#&1I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rmultinomF(const int &)",
+                "file": "C:/Users/Markus/Documents/bayesmcustom/src/utilityFunctions.cpp",
+                "line": 320,
+                "column": 5,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]

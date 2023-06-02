@@ -1,0 +1,16 @@
+debian
+\.travis\.yml
+\.git
+src/lapack
+^.*\.Rproj$
+^\.Rproj\.user$
+^.*\.tar\.gz$
+^local
+^vignettes/rmd
+^.editorconfig
+^\.github
+^\.codecov.yml
+^\.covrignore
+^GPATH
+^GRTAGS
+^GTAGS

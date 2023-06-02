@@ -1,0 +1,8 @@
+library("Rcpp")
+cppFunction(
+  "#include <thread>
+  
+  int getcpu(){return std::thread::hardware_concurrency();}
+  "
+)
+getcpu()
